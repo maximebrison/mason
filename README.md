@@ -165,5 +165,5 @@ Therefore I can guarantee that less than 1% of my code is *AI-generated*, that 1
 > These are libraries and bits of code I used, that are worth mentioning since it does exactly what I want, is easy to use and well documented. Maybe some of them are widely acknowledged, but I didn't know about any of these before, so if it can help you the way it helped me, help yourself !
 
 - Markdown parser : [Milkdown](https://milkdown.dev)
-- HTML parser : [BeautifulSoup]([Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation](https://beautiful-soup-4.readthedocs.io/en/latest/#))
+- HTML parser : [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/#)
 - Game Of Life banner : [CSS-TRICKS](https://css-tricks.com/game-life/)
