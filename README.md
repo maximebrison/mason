@@ -47,7 +47,7 @@ You can use **Docker Desktop**, but this quick tutorial will only cover *self-ho
 ```yaml
 services:
   mason:
-    image: hekiito/mason:0.6.0
+    image: hekiito/mason:latest
     container_name: mason
     restart: unless-stopped
     environment:
