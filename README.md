@@ -1,7 +1,7 @@
 <h1 align="center">MasonCMS</h1>
 
 <p align="center">
-  <img src="./.github/icon.svg" alt="icon"  height="200" width="200" margin-right="100%"/>
+  <img src="https://raw.githubusercontent.com/maximebrison/mason/master/.github/icon.svg" alt="icon"  height="200" width="200" margin-right="100%"/>
 </p>
 
 > Full documentation will be ready in a few weeks *(as of 2026/04/21)*
@@ -86,11 +86,11 @@ Then access `http://<server-ip>:<port>/` (using the port specified in the `compo
 
 #### Getting a Github API key
 
-![2026-04-21_16-59-30-ezgif.com-video-to-gif-converter](./.github/github_api_key.gif)
+![2026-04-21_16-59-30-ezgif.com-video-to-gif-converter](https://raw.githubusercontent.com/maximebrison/mason/master/.github/github_api_key.gif)
 
 #### Getting a Codeberg API key
 
-![2026-04-21_17-02-55-ezgif.com-video-to-gif-converter](./.github/codeberg_api_key.gif)
+![2026-04-21_17-02-55-ezgif.com-video-to-gif-converter](https://raw.githubusercontent.com/maximebrison/mason/master/.github/codeberg_api_key.gif)
 
 ### To know before using !
 
@@ -133,6 +133,7 @@ Feel free to contribute or suggest ideas !
 - "see more" on overflowing blog posts not showing properly on iPad
 - Blog post creation/edition on mobile difficult (will be fixed by my new overlay on Milkdown, planned for the end of 2026)
 - Loading gif not showing properly on some requests
+- Issue when fetching images with relative *src*
 
 ## Disclaimer
 
