@@ -139,7 +139,7 @@ Feel free to contribute or suggest ideas !
 
 ### General
 
-I tried to do this project in the most accurate way regarding today's good coding practice, but since I used tools I never used before (*SolidJS* for instance) and learned things along the way, there may be some semantical mistakes here and there. Fell free to point them to me !
+I tried to do this project in the most accurate way regarding today's good coding practice, but since I used tools I never used before (*SolidJS* for instance) and learned things along the way, there may be some semantical mistakes here and there. Feel free to point them to me !
 
 ### AI usage
 
