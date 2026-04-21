@@ -6,7 +6,7 @@
 
 > Full documentation will be ready in a few weeks *(as of 2026/04/21)*
 >
-> You can see it in use by visiting : https://maximebrison.cc
+> You can see it in use by visiting : https://doc.maximebrison.cc
 
 ## Idea
 
