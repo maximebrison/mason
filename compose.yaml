@@ -1,7 +1,7 @@
 services:
-  yacms-git:
+  mason-dev:
     build: .
-    container_name: yacms-git
+    container_name: mason-dev
     restart: unless-stopped
     networks:
       - backend_net

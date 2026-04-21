@@ -161,6 +161,22 @@
         margin: 0;
     }
 
+    .doc table{
+        width: 100%;
+        border-radius: 5px;
+        background-color: var(--pre);
+    }
+
+    .doc th{
+        text-align: center;
+        background-color: var(--bg);
+        padding: 5px;
+    }
+
+    .doc td{
+        padding: 5px;
+    }
+
     .doc ul{
         padding: 0 15px;
         list-style-position: inside;
