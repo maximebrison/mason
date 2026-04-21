@@ -3,11 +3,13 @@ services:
     build: .
     container_name: mason-dev
     restart: unless-stopped
+    ports:
+      - "8005:8005"
     networks:
       - backend_net
     volumes:
       - ./app:/app
-    command: fastapi dev app.py --host 0.0.0.0 --port 8002
+    command: fastapi dev app.py --host 0.0.0.0 --port 8005
 
 networks:
   backend_net:

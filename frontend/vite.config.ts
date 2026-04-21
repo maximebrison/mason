@@ -8,27 +8,27 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "https://yacms-git.dev.lan",
+        target: "http://localhost:8005",
         changeOrigin: true,
         secure: false
       },
       "/repos": {
-        target: "https://yacms-git.dev.lan",
+        target: "http://localhost:8005",
         changeOrigin: true,
         secure: false
       },
       "/assets": {
-        target: "https://yacms-git.dev.lan",
+        target: "http://localhost:8005",
         changeOrigin: true,
         secure: false
       },
       "/uploads": {
-        target: "https://yacms-git.dev.lan",
+        target: "http://localhost:8005",
         changeOrigin: true,
         secure: false
       },
       "/temp": {
-        target: "https://yacms-git.dev.lan",
+        target: "http://localhost:8005",
         changeOrigin: true,
         secure: false
       }

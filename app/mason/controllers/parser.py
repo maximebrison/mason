@@ -80,17 +80,18 @@ class Parser:
 
         return soup
 
-    def _process(self, fileContent: bytes, contentType: str, repo_dir: str):
+    def _process(self, fileContent: bytes, content_type: str, repo_dir: str):
         filename = str(uuid.uuid4())
         processers = {
             "svg": self._process_svg,
             "png": self._process_png,
             "ico": self._process_ico,
-            "jpeg": self._process_jpeg
+            "jpeg": self._process_jpeg,
+            "gif": self._process_gif
         }
 
         for p in processers:
-            if p in contentType:
+            if p in content_type:
                 processers[p](fileContent, filename, repo_dir)
                 return f'/repos/{repo_dir}/assets/{filename}.{p}', f'{filename}.{p}'
             
@@ -108,4 +109,8 @@ class Parser:
 
     def _process_jpeg(self, fileContent: bytes, filename: str, repo_dir: str):
         with open(self.REPOS_FOLDER.joinpath(repo_dir, "assets", f"{filename}.jpeg"), "wb") as f:
+            f.write(fileContent)
+
+    def _process_gif(self, fileContent: bytes, filename: str, repo_dir: str):
+        with open(self.REPOS_FOLDER.joinpath(repo_dir, "assets", f"{filename}.gif"), "wb") as f:
             f.write(fileContent)
