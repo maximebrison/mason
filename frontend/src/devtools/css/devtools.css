@@ -1,0 +1,412 @@
+@media (min-width: 0px){
+    .admin-tools{
+        position: fixed;
+        z-index: 2;
+        bottom: 25px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .admin-tools button{
+        font-size: 1em;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px 15px;
+        color: var(--text);
+        background-color: var(--alternate-bg);
+    }
+
+    .admin-tools button:hover{
+        background-color: var(--alternate-bg-trans);
+    }
+
+    .admin-tools button:active{
+        scale: 0.95;
+    }
+
+    .admin-tools button.logout{
+        background-color: var(--accent1);
+    }
+
+    .admin-tools button.logout:hover{
+        background-color: var(--accent1-trans);
+    }
+
+    .devtools{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .devtools a{
+        color: var(--accent3);
+    }
+
+    .devtools > .left{
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 auto;
+        align-items: top;
+        width: 100%;
+        height: 150px;
+        padding: 15px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .devtools > .left i{
+        color: var(--text-trans);
+        margin-right: 5px;
+    }
+
+    .devtools > .left::-webkit-scrollbar{
+        display: none;
+    }
+
+    .devtools > .left h2{
+        margin: 0;
+        padding: 5px;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+        color: var(--text);
+    }
+
+    .devtools > .left > .category{
+        display: inline-flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+        gap: 2px;
+        min-width: 150px;
+        width: fit-content;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .devtools > .left > .category::-webkit-scrollbar{
+        display: block;
+    }
+
+    .devtools > .left span{
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 5px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .devtools > .left span:hover{
+        background-color: var(--alternate-bg);
+    }
+
+    .devtools > .left span:active{
+        background-color: var(--alternate-bg-trans);
+    }
+
+    .devtools > .left span.selected{
+        background-color: var(--alternate-bg);
+    }
+
+    .devtools > .left hr{
+        border: 1px solid var(--border);
+        margin: 0 5px;
+    }
+
+    .devtools > .right{
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .devtools > .right hr{
+        width: 100%;
+        margin: 15px 0;
+        border: 1px solid var(--border);
+    }
+
+    .devtools > hr{
+        width: 2px;
+        margin: 0;
+        border: 1px solid var(--border);
+    }
+
+    .config-page{
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .config-page > h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10%;
+        color: var(--text-trans);
+    }
+
+    .config-page > .content{
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        padding: 0 15px;
+        overflow-y: auto;
+    }
+    
+    .config-page > .content > h2{
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .config-page > .content form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .config-page > .content form.incomplete{
+        border-left: 3px solid var(--accent1);
+    }
+
+    .config-page > .content form label{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: 100%;
+        width: 100%;
+    }
+
+    .config-page > .content .sub{
+        width: 100%;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .config-page > .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10%;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .layout-selector{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: var(--alternate-bg-trans);
+        border: 1px solid var(--border);
+    }
+
+    .config-page > .bottom form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .config-page > .bottom form > button.inline{
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .config-page > .bottom form > input{
+        font-family: "Source Sans Pro";
+        width: 100%;
+        height: 30px;
+        padding: 0 10px;
+        background-color: var(--alternate-bg);
+        color: var(--text);
+        border: 0;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .config-page > .bottom form > select{
+        font-family: "Source Sans Pro";
+        width: fit-content;
+        height: 30px;
+        padding: 0 10px;
+        background-color: var(--alternate-bg);
+        color: var(--text);
+        border: 0;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .config-page > .bottom form > select:focus{
+        outline: none;
+    }
+    
+    .entry{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+        transition: background-color, 0.1s;
+    }
+
+    .entry:hover{
+        background-color: var(--alternate-bg-trans);
+    }
+
+    .entry > .key{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+    }
+
+    .entry > .value{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 15px;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+    }
+
+    .entry.single{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        height: 50px;
+        gap: 15px;
+    }
+
+    .entry.single > .label{
+        user-select: none;
+        width: 100%;
+        text-align: center;
+        color: var(--text-trans);
+    }
+
+    .entry input, .entry select{
+        font-family: "Source Sans Pro";
+        width: 100%;
+        height: 30px;
+        padding: 0 10px;
+        background-color: var(--alternate-bg);
+        color: var(--text);
+        border: 0;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .entry input:focus{
+        border: 1px solid var(--accent1);
+        outline: none;
+    }
+
+    .entry input::placeholder{
+        color: var(--text-trans);
+    }
+
+    .entry input[type="file"]{
+        padding: 5px 10px;
+    }
+
+    .entry input[type="file"]::-webkit-file-upload-button{
+        display: none;
+    }
+
+    .popup-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-content h1{
+        color: var(--text-trans);
+    }
+
+    .popup-content i{
+        color: var(--text-trans);
+    }
+
+    .inline-button{
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1 / 1;
+        height: 30px;
+        background-color: var(--alternate-bg);
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+
+    .inline-button:hover{
+        background-color: var(--alternate-bg-trans);
+    }
+
+    .inline-button:active{
+        scale: 0.90;
+    }
+}
+
+@media (min-width: 1000px){
+    .devtools{
+        flex-direction: row;
+    }
+
+    .devtools > .left{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+        padding: 0 15px;
+    }
+
+    .devtools > .left::-webkit-scrollbar{
+        display: block;
+    }
+
+    .devtools > .left > .category{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .devtools > .right{
+        width: 80%;
+        height: 100%;
+    }
+
+    .devtools > .left hr{
+        width: 100%;
+        margin: 15px 0;
+    }
+}

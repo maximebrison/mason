@@ -1,0 +1,87 @@
+.repositories-settings .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.burger .title{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px;
+    background-color: var(--alternate-bg-trans);
+    border-radius: 5px;
+}
+
+.burger .title:hover{
+    background-color: var(--alternate-bg);
+}
+
+.burger .title:active{
+    background-color: var(--alternate-bg-trans);
+}
+
+.burger .dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--pre);
+    border-radius: 0 0 5px 5px;
+}
+
+.burger.show .dropdown{
+    height: fit-content;
+}
+
+.burger.show .title{
+    border-radius: 5px 5px 0 0;
+}
+
+.repositories-settings .sorter{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 15px 0;
+}
+
+.repositories-settings .sorter button{
+    border: none;
+    color: var(--text);
+    background-color: var(--alternate-bg);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.repositories-settings .sorter button:hover{
+    background-color: var(--alternate-bg-trans);
+}
+
+.repositories-settings .sorter button:active{
+    scale: 0.95;
+}
+
+.repositories-settings .sorter .selected{
+    background-color: var(--accent1);
+}
+
+.repositories-settings .sorter i{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}

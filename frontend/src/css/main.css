@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('../assets/fonts/source-sans-pro.regular.woff2');
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro";
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+a:hover{
+    color: var(--accent1);
+}
+
+path{
+    transition: fill .2s ease;
+}
+
+pre{
+    color: var(--text);
+    background-color: var(--pre);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+code{
+    color: var(--text);
+    background-color: var(--pre);
+    padding: 5px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+*::-webkit-scrollbar{
+    width: 1px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: var(--scrollbar-thumb);
+}
+
+*::-webkit-scrollbar-track{
+    opacity: 0;
+}
+
+form{
+    width: 100%;
+}
+
+form button{
+    color: var(--text);
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--accent2);
+    border: 0;
+    width: fit-content;
+}
+
+form button:hover{
+    background-color: var(--accent2-trans);
+}
+
+form button:active{
+    scale: 0.95;
+}
+
+form > select{
+    font-family: "Source Sans Pro";
+    width: fit-content;
+    height: 30px;
+    padding: 0 10px;
+    background-color: var(--alternate-bg);
+    color: var(--text);
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+form > select:focus{
+    outline: none;
+}
+
+button.sensible{
+    color: #FFF0EB;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #C8553D;
+    border: 0;
+    width: fit-content;
+}
+
+button.sensible:hover{
+    background-color: rgba(200, 85, 61, 0.8);
+}
+
+button.sensible:active{
+    scale: 0.95;
+}
+
+button.validate{
+    color: #FFF0EB;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #28965A;
+    border: 0;
+    width: fit-content;
+}
+
+button.validate:hover{
+    background-color: rgba(40, 150, 90, 0.8);
+}
+
+button.validate:active{
+    scale: 0.95;
+}
+
+blockquote{
+    width: 100%;
+    margin: 0;
+    color: var(--text-trans);
+    border-left: 0.33em solid var(--border);
+    padding-left: 15px;
+}

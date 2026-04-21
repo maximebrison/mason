@@ -1,0 +1,239 @@
+.config-flow{
+    width: 100vw;
+    height: 100vh;
+    padding: 150px 250px;
+}
+
+.config-flow > .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--alternate-bg-trans);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.config-flow > .container > .navigate{
+    user-select: none;
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.1s;
+    color: var(--text-trans);
+}
+
+.config-flow > .container > .navigate > span{
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.config-flow > .container > .navigate:hover{
+    background-color: var(--alternate-bg);
+}
+
+.config-flow > .container > .navigate:active{
+    background-color: var(--alternate-bg-trans);
+}
+
+.config-flow > .container > .back{
+    left: 0;
+    top: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.config-flow > .container > .forward{
+    right: 0;
+    top: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.config-flow > .container > .steps{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.config-flow > .container > .steps > span{
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background-color: var(--text-trans);
+}
+
+.config-flow > .container > .steps > span.current{
+    background-color: var(--accent1);
+}
+
+.config-flow .step{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.config-flow .step > header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.config-flow .step .body{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.config-flow .step .body input[type=text], .config-flow .step .body input[type=password]{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--alternate-bg);
+}
+
+.config-flow .step .body input[type=text]:focus, .config-flow .step .body input[type=password]:focus{
+    border: 1px solid var(--accent1);
+    outline: none;
+}
+
+.config-flow .step b{
+    color: var(--accent1);
+}
+
+.config-flow .step > hr{
+    width: 100%;
+    border: 1px solid var(--border);
+}
+
+.config-flow .step h2{
+    margin: 0;
+}
+
+.config-flow .step button{
+    margin-top: 15px;
+    color: var(--text);
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--accent2);
+    border: 0;
+    width: fit-content;
+}
+
+.config-flow .step button:hover{
+    background-color: var(--accent2-trans);
+}
+
+.config-flow .step button:active{
+    scale: 0.95;
+}
+
+.config-flow .welcome > img{
+    height: 128px;
+    border-radius: 10px;
+}
+
+.config-flow .api-keys .body .added-keys{
+    width: 100%;
+    height: calc(60% - 30px);
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.config-flow .api-keys .body .add{
+    width: 100%;
+    min-height: 30px;
+    height: 30px;
+}
+
+.config-flow .api-keys .body .add > form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.config-flow .api-keys .body .add > form > button.inline{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.config-flow .api-keys .body .add > form > input{
+    font-family: "Source Sans Pro";
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    background-color: var(--alternate-bg);
+    color: var(--text);
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.config-flow .api-keys .body .button{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    height: 30px;
+    background-color: var(--alternate-bg);
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    font-size: 1.5em;
+}
+
+.config-flow .api-keys .body .button:hover{
+    background-color: var(--alternate-bg-trans);
+}
+
+.config-flow .api-keys .body .button:active{
+    scale: 0.90;
+}
+
+.config-flow form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.config-flow form > label{
+    color: var(--text-trans);
+    width: 100%;
+}

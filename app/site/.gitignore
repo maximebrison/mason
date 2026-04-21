@@ -1,0 +1,9 @@
+*
+
+!assets/
+!assets/banner_logo.svg
+!assets/banner_bg.svg
+!assets/footer_bg.svg
+!assets/site_icon.svg
+
+!.gitignore

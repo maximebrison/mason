@@ -1,0 +1,11 @@
+fastapi[standard]
+pydantic
+requests
+python-crontab
+marko
+marko[codehilite]
+beautifulsoup4
+itsdangerous
+python-multipart
+APScheduler
+pillow

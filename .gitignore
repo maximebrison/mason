@@ -1,0 +1,12 @@
+# Python
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pud
+*.sqlite3
+
+# Junk
+.DS_Store
+
+

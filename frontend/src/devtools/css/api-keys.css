@@ -1,0 +1,28 @@
+.api-keys > .content{
+    gap: 15px;
+}
+
+.api-keys .primary{
+    background-color: rgba(255, 217, 0, 0.1)!important;
+}
+
+.loaded-key{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.loaded-key > span > img{
+    height: 80%;
+}
+
+.loaded-key > .key{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--alternate-bg-trans);
+    padding: 5px;
+    border-radius: 5px;
+}

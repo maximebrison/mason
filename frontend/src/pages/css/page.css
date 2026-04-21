@@ -1,0 +1,339 @@
+@media (min-width: 0px){
+    .page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        flex: 0 0 auto;
+    }
+
+    .page > article{
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    .page > .doc *{
+        scroll-margin-top: 50px;
+    }
+
+    .page > aside{
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        position: fixed;
+        padding: 100px 25px 0 25px;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+        transition: right 0.2s, visibility 0s 0.2s;
+        background-color: var(--bg);
+        overflow: auto;
+    }
+
+    .page > aside.show{
+        z-index: 10;
+        visibility: visible;
+        right: 0;
+        transition: right 0.2s, visibility 0s;
+    }
+
+    .page > aside > .close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        background-color: var(--alternate-bg-trans);
+        border: none;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        color: var(--text);
+    }
+
+    .page > aside > .close:hover{
+        background-color: var(--alternate-bg);
+    }
+
+    .page >aside > .close:active{
+        background-color: var(--alternate-bg-trans);
+    }
+
+    .page > aside h1{
+        font-size: 1.2em;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .page > aside h2{
+        font-size: 1em;
+        margin: 15px 0 5px 0;
+    }
+
+    .page > aside hr{
+        border: 1px solid var(--border);
+        margin: 0;
+    }
+
+    .page .info > blockquote > .line{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .page .info a{
+        color: var(--accent3);
+    }
+
+    .page .info a:hover{
+        color: var(--accent1);
+    }
+
+    .page .info .key::first-letter{
+        text-transform: capitalize;
+    }
+
+    .toggle-aside{
+        display: block;
+        position: sticky;
+        background-color: var(--alternate-bg);
+        border: none;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        color: var(--text);
+        z-index: 5;
+    }
+
+    .outline{
+        text-align: left;
+        white-space: normal;
+        overflow-wrap: break-word;
+        height: 80%;
+    }
+
+    .outline .selected{
+        color: var(--accent1);
+    }
+
+    .outline ul{
+        list-style-type: none;
+        margin: 5px 0;
+        padding-left: 20px;
+    }
+
+    .outline li{
+        margin: 5px 0;
+    }
+
+    .outline > ul{
+        padding-left: 0;
+    }
+
+    .outline a{
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .doc {
+        text-align: left;
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+    .doc .image-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .doc img{
+        object-fit: cover;
+    }
+
+    .doc .caption{
+        width: 100%;
+        text-align: center;
+        color: var(--text-trans);
+        margin: 0;
+    }
+
+    .doc ul{
+        padding: 0 15px;
+        list-style-position: inside;
+    }
+
+    .doc li:has(> input[type="checkbox"]){
+        list-style-type: none;
+    }
+
+    /* Added since Milkdown creates <p> elements inside <li>, which caused spacing issues*/
+    .doc li p{
+        width: fit-content;
+        display: inline;
+        margin: 0;
+    }
+
+    .doc input[type="checkbox"]{
+        appearance: none;
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        width: 20px;;
+        aspect-ratio: 1 / 1;
+        border: 1px solid var(--border);
+        background-color: var(--alternate-bg-trans);
+        border-radius: 5px;
+    }
+
+    .doc input[type="checkbox"]:checked::after{
+        content: "✔";
+        color: var(--text);
+        position: relative;
+    }
+
+    .doc *{
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .doc h1{
+        width: 100%;
+        font-size: 2em;
+        font-weight: bolder;
+        border-bottom: 1px solid var(--border);
+        padding: 0 0 5px 0;
+    }
+
+    .doc h2{
+        width: 100%;
+        font-size: 1.75em;
+        font-weight: bolder;
+        border-bottom: 1px solid var(--border);
+        padding: 0 0 5px 0;
+    }
+
+    .doc h3{
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: bolder;
+        padding: 0;
+    }
+
+    .doc h4{
+        width: 100%;
+        font-size: 1.25em;
+        font-weight: bolder;
+        padding: 0;
+    }
+
+    .doc h5{
+        width: 100%;
+        font-size: 1.125em;
+        font-weight: bolder;
+        padding: 0;
+    }
+
+    .doc h6{
+        width: 100%;
+        font-size: 1em;
+        font-weight: bolder;
+        padding: 0;
+    }
+
+    .doc a{
+        color: var(--accent3);
+    }
+
+    .doc .highlight {
+        background-color: var(--alternate-bg);
+        border-radius: 5px;
+    }
+
+    .sidebar-item{
+        color: var(--text);
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        background-color: var(--card-bg);
+        border-radius: 5px;
+        margin: 15px 0;
+        padding: 15px;
+        box-shadow: 
+            0 4px 8px 0 var(--bg-trans), 
+            0 6px 20px 0 var(--bg-trans);
+    }
+
+    .sidebar-item:hover{
+        color: var(--text);
+        background-color: var(--alternate-bg);
+    }
+
+    .sidebar-item p{
+        margin: 0;
+    }
+
+    .sidebar-item h1{
+        border-bottom: none!important;
+    }
+
+    .sidebar-item .line{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar-item .line > .key{
+        color: var(--text-trans);
+    }
+
+    .sidebar-item span{
+        word-wrap: break-word;
+    }
+}
+
+@media (min-width: 1000px){
+    .page{
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .page > aside .close{
+        display: none;
+    }
+
+    .page > article{
+        width: 80%;
+        padding: 25px 50px;
+    }
+
+    .page > aside{
+        visibility: visible;
+        position: sticky;
+        top: calc(5vh + 15px);
+        padding: 25px 15px;
+        width: 20%;
+        height: fit-content;
+        border-radius: 15px;
+        right: auto;
+        background-color: transparent;
+    }
+
+    .page > .doc *{
+        scroll-margin-top: 65px;
+    }
+
+    .toggle-aside{
+        display: none;
+    }
+}
