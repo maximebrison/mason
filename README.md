@@ -6,13 +6,13 @@
 
 > Full documentation will be ready in a few weeks *(as of 2026/04/21)*
 >
-> You can see it in use by visiting : https://doc.maximebrison.cc
+> You can see it in use by visiting : https://www.maximebrison.cc
 
 ## Idea
 
 A friend of mine needed a website to easily show its projects hosted on [Github](https://github.com) and [Codeberg](https://codeberg.org), and came to me with the idea of a *CMS* that would fetch READMEs from these providers, and fashion them in a modern, clean and easy to manage website.
 
-On the other end, I'm starting as a **Fullstack developer** and needed a *showcase* project. 
+On the other hand, I'm starting as a **Fullstack developer** and needed a *showcase* project. 
 
 > Odoo if you're watching... This one's for you !
 
@@ -51,7 +51,7 @@ services:
     container_name: mason
     restart: unless-stopped
     environment:
-      SECRET_KEY: <your_secret_key> #Required !
+      SECRET_KEY: <your_secret_key> # Required !
       HOST: '0.0.0.0'
       PORT: '8005'
       DEBUG: 'false' # Should stay false in prod
@@ -164,6 +164,6 @@ Therefore I can guarantee that less than 1% of my code is *AI-generated*, that 1
 
 > These are libraries and bits of code I used, that are worth mentioning since it does exactly what I want, is easy to use and well documented. Maybe some of them are widely acknowledged, but I didn't know about any of these before, so if it can help you the way it helped me, help yourself !
 
-- Markdown parser : [Milkdown](https://milkdown.dev)
+- Markdown WYSIWYG editor : [Milkdown](https://milkdown.dev)
 - HTML parser : [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/#)
 - Game Of Life banner : [CSS-TRICKS](https://css-tricks.com/game-life/)
