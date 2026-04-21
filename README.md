@@ -134,6 +134,8 @@ Feel free to contribute or suggest ideas !
 - Blog post creation/edition on mobile difficult (will be fixed by my new overlay on Milkdown, planned for the end of 2026)
 - Loading gif not showing properly on some requests
 - Issue when fetching images with relative *src*
+- Admin UI not fully responsive (will be corrected soon)
+- Large images not displaying as expected on mobile
 
 ## Disclaimer
 
