@@ -1,6 +1,6 @@
-# MasonCMS
+<h1 align="center">MasonCMS</h1>
 
-<img src="./.github/icon.svg" alt="icon"  height="200"/>
+<img src="./.github/icon.svg" alt="icon"  height="200" margin-right="100%"/>
 
 > Full documentation will be ready in a few weeks *(as of 2026/04/21)*
 >
