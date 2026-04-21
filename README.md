@@ -38,7 +38,7 @@ On the other end, I'm starting as a **Fullstack developer** and needed a *showca
 
 ## Usage
 
-This *CMS* can easily be installed using **Docker Compose** ([Docker Hub page]([hekiito/mason - Docker Image](https://hub.docker.com/r/hekiito/mason)))
+This *CMS* can easily be installed using **Docker Compose** ([Docker Hub page](https://hub.docker.com/r/hekiito/mason))
 
 You can use **Docker Desktop**, but this quick tutorial will only cover *self-hosting* on a remote linux server with **Docker** and **Docker Compose** already installed.
 
