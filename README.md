@@ -1,12 +1,10 @@
-<h1 align="center">MasonCMS</h1>
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/maximebrison/mason/master/.github/icon.svg" alt="icon"  height="200" width="200" margin-right="100%"/>
 </p>
 
 > Full documentation will be ready in a few weeks *(as of 2026/04/21)*
 >
-> You can see it in use by visiting : https://www.maximebrison.cc
+> You can see it in use by visiting : https://maximebrison.cc
 
 ## Idea
 
