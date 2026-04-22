@@ -8,7 +8,7 @@
 
 ## Idea
 
-A friend of mine needed a website to easily show its projects hosted on [Github](https://github.com) and [Codeberg](https://codeberg.org), and came to me with the idea of a *CMS* that would fetch READMEs from these providers, and fashion them in a modern, clean and easy to manage website.
+A friend of mine needed a website to easily show its projects hosted on [Github](https://github.com) and [Codeberg](https://codeberg.org), and came to me with the idea of a *CMS* that would fetch READMEs from these providers, and display them in a modern, clean and easy to manage website.
 
 On the other hand, I'm starting as a **Fullstack developer** and needed a *showcase* project. 
 
