@@ -99,6 +99,7 @@ Then access `http://<server-ip>:<port>/` (using the port specified in the `compo
 - If you forget your admin password, a small utility is provided within the container to generate a new one.
     - `docker exec -it <container-name> python3 reset_password.py`
     - Then change it from the admin panel
+- To login into the admin panel, go to `http://<domain>/?page=_login`
 
 ## Features to be added
 
