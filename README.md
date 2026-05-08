@@ -1,16 +1,14 @@
-<h1 align="center">MasonCMS</h1>
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/maximebrison/mason/master/.github/icon.svg" alt="icon"  height="200" width="200" margin-right="100%"/>
 </p>
 
 > Full documentation will be ready in a few weeks *(as of 2026/04/21)*
 >
-> You can see it in use by visiting : https://www.maximebrison.cc
+> You can see it in use by visiting : https://maximebrison.cc
 
 ## Idea
 
-A friend of mine needed a website to easily show its projects hosted on [Github](https://github.com) and [Codeberg](https://codeberg.org), and came to me with the idea of a *CMS* that would fetch READMEs from these providers, and fashion them in a modern, clean and easy to manage website.
+A friend of mine needed a website to easily show its projects hosted on [Github](https://github.com) and [Codeberg](https://codeberg.org), and came to me with the idea of a *CMS* that would fetch READMEs from these providers, and display them in a modern, clean and easy to manage website.
 
 On the other hand, I'm starting as a **Fullstack developer** and needed a *showcase* project. 
 
